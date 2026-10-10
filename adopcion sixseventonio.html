@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopción | Huellitas Comunitarias</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación -->
+  <header class="header">
+    <div class="logo">
+              <a href="adopcion sixseventonio.html" class="logo-link">
+
+      <h1>Huellitas <span>Comunitarias</span></h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="adopciones.html">Adopciones</a></li>
+        <li><a href="adopcion sixseventonio.html" class="active">Formulario de solicitud</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <!-- Encabezado de la Página -->
+    <section class="page-title">
+      <h2>Proceso de Adopción</h2>
+      <p>Un compromiso de amor y responsabilidad con los animales rescatados de nuestra comunidad.</p>
+    </section>
+
+    <!-- Pasos del Proceso de Adopción -->
+    <section class="process-section">
+      <h3 class="section-subtitle">¿Cómo es el proceso para adoptar?</h3>
+      
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h4>Solicitud en Línea</h4>
+          <p>Llena el formulario con tus datos de contacto y la información sobre la mascota que deseas integrar a tu hogar.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h4>Entrevista y Revisión</h4>
+          <p>El equipo del proyecto PAEC revisará tu solicitud y agendará una breve entrevista para resolver dudas.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h4>Convivencia Previa</h4>
+          <p>Conoce en persona a la mascota en nuestro punto de encuentro para asegurar una adaptación mutua favorable.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h4>Firma y Entrega</h4>
+          <p>Se firma la Carta Compromiso de Adopción Responsable y se hace entrega formal del nuevo integrante de la familia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de Adopción -->
+    <section class="form-container">
+      <h3>Formulario de Solicitud </h3>
+      <p>Completa los siguientes campos para iniciar tu trámite de adopción:</p>
+
+      <form action="#" method="POST" class="adoption-form">
+        <div class="form-group">
+          <label for="nombre">Nombre completo del solicitante:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+        </div>
+
+        <div class="form-group-double">
+          <div class="form-group">
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="664 123 4567" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mascota">Mascota que deseas adoptar:</label>
+          <select id="mascota" name="mascota" required>
+            <option value="" disabled selected>Selecciona una mascota</option>
+            <option value="Tula">Tula (Perro - Mestizo)</option>
+            <option value="Scar">Scar (Gato - Doméstico)</option>
+            <option value="Sixseventonio">Sixseventonio  (Perro - perron)</option>
+            <option value="Otro">Otra mascota rescatada</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo-vivienda">Tipo de vivienda:</label>
+          <select id="tipo-vivienda" name="tipo-vivienda" required>
+            <option value="Casa con patio">Casa propia con patio</option>
+            <option value="Casa sin patio">Casa sin patio</option>
+            <option value="Departamento">Departamento</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="motivo">¿Por qué deseas adoptar a esta mascota?</label>
+          <textarea id="motivo" name="motivo" rows="4" placeholder="Cuéntanos brevemente tu motivación..." required></textarea>
+        </div>
+
+        <div class="form-checkbox">
+          <input type="checkbox" id="compromiso" required>
+          <label for="compromiso">Me comprometo a brindar alimentación, atención veterinaria y un trato digno a la mascota.</label>
+        </div>
+
+        <button type="button" onclick="window.location.href='index.html'" class="btn btn-primary btn-block">Enviar Solicitud Sixseventonio</button>
+        <form action="index.html" method="GET" class="adoption-form">
+
+        </form>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Huellitas Comunitarias - Proyecto PAEC.</p>
+  </footer>
+
+</body>
+</html>

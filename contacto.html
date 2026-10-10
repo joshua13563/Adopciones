@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Huellitas Comunitarias</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación -->
+  <header class="header">
+    <div class="logo">
+              <a href="contacto.html" class="logo-link">
+
+      <a href="index.html" style="text-decoration: none;">
+        <h1>Huellitas <span>Comunitarias</span></h1>
+      </a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="adopciones.html">Adopciones</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h2>Contacto y Voluntariado</h2>
+      <p>¿Tienes dudas sobre el proyecto PAEC, quieres sumarte como voluntario o entregar un acopio en el plantel?</p>
+    </section>
+
+    <section class="contact-grid">
+      
+      <!-- Información del Punto de Contacto Escolar -->
+      <div class="contact-info-card">
+        <h3>Punto de Encuentro Escolar</h3>
+        <p><strong>📍 Ubicación:</strong> Plantel Escolar PAEC - Edificio B</p>
+        <p><strong>🕒 Horario de Atención:</strong> Lunes a Viernes de 8:00 AM a 2:00 PM</p>
+        <p><strong>📧 Correo Electrónico:</strong> huellitas.paec@escuela.edu.mx</p>
+        <p><strong>📱 Teléfono de Contacto:</strong> (664) 123-4567</p>
+
+        <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--gray-border);">
+
+        <h4>🤝 ¿Cómo ser Voluntario?</h4>
+        <p>Puedes apoyarnos en la difusión de eventos, recepción de insumos o el cuidado temporal de animales durante las actividades escolares.</p>
+      </div>
+
+      <!-- Formulario de Contacto -->
+      <div class="form-container" style="margin: 0; max-width: 100%;">
+        <h3>Envíanos un Mensaje</h3>
+        <form action="index.html" method="GET" class="adoption-form">
+          <div class="form-group">
+            <label for="nombre-contacto">Nombre completo:</label>
+            <input type="text" id="nombre-contacto" name="nombre" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="correo-contacto">Correo electrónico:</label>
+            <input type="email" id="correo-contacto" name="correo" placeholder="correo@ejemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" required>
+              <option value="Dudas generales">Dudas generales</option>
+              <option value="Ser voluntario">Quiero ser voluntario</option>
+              <option value="Entrega de donaciones">Entrega de donaciones</option>
+              <option value="Reporte de animal rescatado">Reporte de animal rescatado</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <button type="button" onclick="window.location.href='index.html'" class="btn btn-primary btn-block">Enviar Mensaje</button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Huellitas Comunitarias - Proyecto PAEC.</p>
+  </footer>
+
+</body>
+</html>
